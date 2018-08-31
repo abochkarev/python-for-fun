@@ -23,7 +23,8 @@ def insert_data(cursor):
                                 ('sqlite3', 'SQLite database access'),
                                 ('sys', 'Runtime services')]:
         log.info('Inserting %s (%s)', module, description)
-        cursor.execute("insert into module values (?, ?)", (module, description))
+        cursor.execute("insert into module values (?, ?)",
+                       (module, description))
     return
 
 

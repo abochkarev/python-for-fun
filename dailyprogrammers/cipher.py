@@ -28,6 +28,9 @@ class Cipher(object):
 
 
 c = Cipher()
-print c.encode_decode('foobar')
-print c.encode_decode('wizard')
-print c.encode_decode('gsrh rh zm vcznkov lu gsv zgyzhs xrksvi')
+print
+c.encode_decode('foobar')
+print
+c.encode_decode('wizard')
+print
+c.encode_decode('gsrh rh zm vcznkov lu gsv zgyzhs xrksvi')

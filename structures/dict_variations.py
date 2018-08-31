@@ -1,20 +1,21 @@
 import collections
 
-#collections.OrderedDict
+# collections.OrderedDict
 odict = collections.OrderedDict()
 odict['one'] = 1
 odict['two'] = 2
 odict['three'] = 3
-print (odict)
+print(odict)
 
-#collections.Counter
+# collections.Counter
 ct = collections.Counter("abracadabra")
-print (ct)
+print(ct)
 ct.update('aaaaaaazzz')
-print (ct)
-print (ct.most_common(2))
+print(ct)
+print(ct.most_common(2))
 
-#collections.UserDict
+
+# collections.UserDict
 class StrKeyDict(collections.UserDict):
     def __missing__(self, key):
         if isinstance(key, str):
@@ -30,17 +31,17 @@ class StrKeyDict(collections.UserDict):
 
 str_key_dict = StrKeyDict()
 str_key_dict['1'] = 1
-print (str_key_dict)
+print(str_key_dict)
 
-#MappingProxyType
+# MappingProxyType
 from types import MappingProxyType
+
 d = {1: 'A'}
 d_proxy = MappingProxyType(d)
-print (d_proxy)
+print(d_proxy)
 try:
     d_proxy[2] = 'X'
 except TypeError:
-    print ('Unable to change the dict')
+    print('Unable to change the dict')
 d[2] = 'X'
-print (d)
-
+print(d)

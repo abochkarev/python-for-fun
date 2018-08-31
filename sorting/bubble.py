@@ -10,4 +10,5 @@ def bubble(l):
     return l
 
 
-print bubble([3, 1, 4, 6, 7, 2, 5, 7, 2, 5, 7, 89, 0, 2, 4])
+print
+bubble([3, 1, 4, 6, 7, 2, 5, 7, 2, 5, 7, 89, 0, 2, 4])

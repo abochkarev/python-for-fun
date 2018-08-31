@@ -15,8 +15,8 @@ class LookingGlass:
             print('Please, don\'t divide on zero')
             return True
 
+
 if __name__ == '__main__':
     with LookingGlass() as what:
         print('Alice, Kitty and Showdrop')
         print(what)
-

@@ -1,5 +1,6 @@
 import copy
 
+
 class Bus:
 
     def __init__(self, passengers=None):
@@ -8,27 +9,23 @@ class Bus:
         else:
             self.passengers = list(passengers)
 
-
     def pick(self, name):
         self.passengers.append(name)
 
     def drop(self, name):
         self.passengers.remove(name)
 
+
 if __name__ == '__main__':
     bus1 = Bus(['Alice', 'Bill', 'Claire', 'David'])
     bus2 = copy.copy(bus1)
     bus3 = copy.deepcopy(bus1)
 
-    print (id(bus1))
-    print (id(bus2))
-    print (id(bus3))
+    print(id(bus1))
+    print(id(bus2))
+    print(id(bus3))
 
     bus1.drop('Bill')
-    print (bus2.passengers)
+    print(bus2.passengers)
 
-    print (bus3.passengers)
-
-
-
-
+    print(bus3.passengers)

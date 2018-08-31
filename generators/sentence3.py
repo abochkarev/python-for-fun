@@ -3,6 +3,7 @@ import reprlib
 
 RE_WORD = re.compile('\w+')
 
+
 class Sentence:
 
     def __init__(self, text):
@@ -14,5 +15,3 @@ class Sentence:
     def __iter__(self):
         for match in RE_WORD.finditer(self.text):
             yield match.group()
-
-

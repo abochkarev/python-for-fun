@@ -6,4 +6,5 @@ def calculate_sum(l):
         return l
 
 
-print calculate_sum([1, 2, 3, [4, 5, 6]])
+print
+calculate_sum([1, 2, 3, [4, 5, 6]])

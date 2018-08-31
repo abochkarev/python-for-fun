@@ -1,5 +1,4 @@
 import pprint
-import sys
 import re
 
 PATH = 'about.txt'
@@ -12,6 +11,5 @@ with open(PATH) as f:
         for match in WORD_RE.finditer(line):
             word = match.group()
             t = (index, match.start() + 1)
-            d.setdefault(word, []).append(t) 
+            d.setdefault(word, []).append(t)
 pprint.pprint(d)
-

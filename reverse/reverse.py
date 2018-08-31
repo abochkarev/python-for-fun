@@ -4,6 +4,7 @@ import sys
 
 class Reverser:
     """A class for reversing text from a file"""
+
     def __init__(self, file_name):
         self._file_name = file_name
 
@@ -28,4 +29,3 @@ if __name__ == '__main__':
     reverser = Reverser(sys.argv[0])
     for l in reverser.reverse():
         print(l)
-

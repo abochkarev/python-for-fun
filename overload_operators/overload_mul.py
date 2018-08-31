@@ -1,5 +1,7 @@
-from array import array
 import numbers
+from array import array
+
+
 class Vector:
     typecode = 'd'
 
@@ -25,4 +27,3 @@ class Vector:
 if __name__ == '__main__':
     print(Vector([1.0, 2.0, 3.0]) * 12)
     print(10 * Vector([1, 2, 3, 4, 5]))
-

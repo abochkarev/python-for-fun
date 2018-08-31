@@ -1,8 +1,8 @@
-from array import array
 import math
+from array import array
+
 
 class Vector2d:
-
     typecode = 'd'
 
     def __init__(self, x, y):
@@ -10,7 +10,7 @@ class Vector2d:
         self.y = float(y)
 
     @classmethod
-    def frombytes(cls, octets): 
+    def frombytes(cls, octets):
         typecode = chr(octets[0])
         memv = memoryview(octets[1:]).cast(typecode)
         return cls(*memv)

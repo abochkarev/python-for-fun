@@ -1,5 +1,6 @@
 import contextlib
 
+
 @contextlib.contextmanager
 def lookging_glass():
     import sys
@@ -7,7 +8,6 @@ def lookging_glass():
 
     def reverse_write(text):
         original_write(text[::-1])
-
 
     sys.stdout.write = reverse_write
     msg = ''
@@ -19,6 +19,7 @@ def lookging_glass():
         sys.stdout.write = original_write
         if msg:
             print(msg)
+
 
 with lookging_glass() as s:
     print('ABC')

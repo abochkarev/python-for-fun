@@ -1,7 +1,7 @@
 import collections
-from collections import namedtuple
 
 Event = collections.namedtuple('Event', 'time proc action')
+
 
 def taxi_process(ident, trips, start_time=0):
     time = yield Event(start_time, ident, 'leave garage')
@@ -10,6 +10,7 @@ def taxi_process(ident, trips, start_time=0):
         time = yield Event(time, ident, 'drop off passenger')
 
     yield Event(time, ident, 'going home')
+
 
 taxi = taxi_process(ident=13, trips=2, start_time=0)
 print(next(taxi))

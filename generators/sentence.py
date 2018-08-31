@@ -18,6 +18,3 @@ class Sentence:
 
     def __repr__(self):
         return 'Sentence(%s)' % reprlib.repr(self.text)
-
-
-

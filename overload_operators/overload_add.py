@@ -23,4 +23,3 @@ if __name__ == "__main__":
     v1 = Vector((1, 2, 3, 4, 5))
     v2 = Vector((1, 2, 3))
     print(v1 + v2)
-

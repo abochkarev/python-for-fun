@@ -1,5 +1,6 @@
-import time 
 import functools
+import time
+
 
 def clock(func):
     @functools.wraps(func)
@@ -15,8 +16,9 @@ def clock(func):
             pairs = ['%s=%r' % (k, w) for k, w in sorted(kwargs.items())]
             arg_lst.append(', '.join(pairs))
         arg_str = ', '.join(arg_lst)
-        print ('[%0.8fs] %s(%s) -> %r ' % (elapsed, name, arg_str, result))
+        print('[%0.8fs] %s(%s) -> %r ' % (elapsed, name, arg_str, result))
         return result
+
     return clocked
 
 
@@ -25,9 +27,8 @@ def clock(func):
 def fibonacci(n):
     if n < 2:
         return n
-    return fibonacci(n-2) + fibonacci(n-1)
+    return fibonacci(n - 2) + fibonacci(n - 1)
+
 
 if __name__ == '__main__':
-    print (fibonacci(6))
-
-
+    print(fibonacci(6))

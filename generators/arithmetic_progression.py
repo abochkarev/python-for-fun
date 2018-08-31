@@ -1,9 +1,9 @@
 class ArythmeticProgression:
-    
+
     def __init__(self, begin, step, end=None):
         self.begin = begin
         self.step = step
-        self.end = end 
+        self.end = end
 
     def __iter__(self):
         result = type(self.begin + self.step)(self.begin)

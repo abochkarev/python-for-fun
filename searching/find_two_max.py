@@ -11,4 +11,5 @@ def find_two_max(l):
     return max_1, max_2
 
 
-print find_two_max([61, 99, 2, 33, 122, 11])
+print
+find_two_max([61, 99, 2, 33, 122, 11])
