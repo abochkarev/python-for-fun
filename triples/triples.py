@@ -15,4 +15,3 @@ def triples(n):
 
 if __name__ == '__main__':
     triples(int(sys.argv[1]))
-
